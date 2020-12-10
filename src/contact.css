@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  max-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fae0df;
+}
+
+header {
+  flex: 1;
+  background-color: #fae0df;
+  color: #16a596;
+  max-width: 100%;
+}
+
+#main {
+  background-position: center center;
+  background-size: cover;
+  background-image: url('images/background.jpg');
+}
+label {
+  color: #16a596;
+}
+legend {
+  color: #16a596;
+}
+input:focus {
+  outline: 2px lightskyblue;
+  color: #790c5a;
+}
+input[type='file'] {
+  background-color: #e6739f;
+  color: #f1d4d4;
+  text-align: left;
+}

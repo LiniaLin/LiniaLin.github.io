@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script language="javascript">
+      function chg(obj) {
+        if (obj.options[obj.getElementById('select').value == '-1'])
+          document.getElementById('select_else').style.display = '';
+        else document.getElementById('select_else').style.display = 'none';
+      }
+    </script>
+  </head>
+  <body>
+    <fieldset class="form-group">
+      <div class="row" onchange="chg(this)" id="select">
+        <legend class="col-form-label col-sm-2 pt-0 mt-2">Problems</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gridRadios"
+              id="gridRadios1"
+              value="1"
+            />
+            <label class="form-check-label" for="gridRadios1">
+              Comment
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gridRadios"
+              id="gridRadios2"
+              value="2"
+            />
+            <label class="form-check-label" for="gridRadios2">
+              Question
+            </label>
+          </div>
+
+          <div class="form-check ">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gridRadios"
+              id="gridRadios3"
+              value="-1"
+            />
+            <label class="form-check-label" for="gridRadios3">
+              Order Problem
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </body>
+</html>

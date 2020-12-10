@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>WEB222 Store</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body onload="insertitems(pictures)">
+    <header>
+      <div id="wrapper">
+        <div id="left-sidebar">
+          <h1>Bag Store!</h1>
+        </div>
+
+        <div id="right-sidebar">
+          <a href="Contact.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <div id="app">
+      <nav id="menu">
+        <h1 style="color: #16a596;">Menu</h1>
+        <ul>
+          <li id="all"><a href="#">All</a></li>
+          <li id="men"><a href="#">Men</a></li>
+          <li id="women"><a href="#">Women</a></li>
+        </ul>
+      </nav>
+
+      <div id="main">
+        <div id="productloader"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="bottom">
+        <form action="https://formspree.io/f/mqkgypea" method="POST">
+          <div class="line1">
+            <label for="Subscribe-Email">Please enter your email to subscribe</label>
+          </div>
+
+          <input type="email" name="email-address" id="Subscribe-Email" />
+          <input type="submit" name="submit" value="Subscribe" />
+        </form>
+        <p>Linia Lin &copy</p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

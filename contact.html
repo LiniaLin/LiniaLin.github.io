@@ -9,7 +9,50 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="contact.css" />
+    <style>
+html,
+body {
+  margin: 0;
+  height: 100%;
+  max-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fae0df;
+}
+
+header {
+  flex: 1;
+  background-color: #fae0df;
+  color: #16a596;
+  max-width: 100%;
+}
+
+#main {
+  background-position: center center;
+  background-size: cover;
+  background-image: url('images/background.jpg');
+}
+label {
+  color: #16a596;
+}
+legend {
+  color: #16a596;
+}
+input:focus {
+  outline: 2px lightskyblue;
+  color: #790c5a;
+}
+input[type='file'] {
+  background-color: #e6739f;
+  color: #f1d4d4;
+  text-align: left;
+}
+
+
+    </style>
 
     <title>WEB222 Store - Contact</title>
   </head>
@@ -213,8 +256,33 @@
         <input type="hidden" name="source" value="Linia Lin" />
       </form>
     </div>
-    <script src="./contact.js"></script>
+    
+<script>
 
+window.onload = function() {
+  document.getElementById('problem-order-problem').addEventListener('click', () => {
+    clean.loadTextBox();
+  });
+  document.getElementById('problem-comment').addEventListener('click', () => {
+    clean.unloadTextBox();
+  });
+  document.getElementById('problem-question').addEventListener('click', () => {
+    clean.unloadTextBox();
+  });
+};
+
+  const clean = {
+    loadTextBox: function() {
+      document.getElementById('orderpro').style.display = '';
+    },
+    unloadTextBox: function() {
+      document.getElementById('orderpro').style.display = 'none';
+    }
+  };
+
+
+
+</script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
